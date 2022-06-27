@@ -1,3 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
 files:
     "/etc/php.d/99uploadsize.ini":
         mode: "000644"
